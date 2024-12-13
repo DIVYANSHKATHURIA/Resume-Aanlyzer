@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - CVSyncer</title>
+    <link rel="stylesheet" href="communityStyles.css">
+    <style>
+        footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+    </style>
+
+</head>
+<body>
+
+
+    <nav>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/#features">Features</a>
+            <a href="/analyze">Analyze Resume</a>
+            <a href="/community">Community</a>
+            <a href="/contactUs">Contact Us</a>
+        </div>
+        <div class="nav-auth">
+            <a href="/signUp" class="signup-btn">Sign Up</a>
+            <a href="/signIn" class="signin-btn">Sign In</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>CVSyncer</h1>
+        <p>Your Pathway to Successful Job Applications</p>
+    </header>
+    <section id="community" class="community">
+        <div class="community-container">
+            <h2>Community Forum</h2>
+            <form id="post-form">
+                <textarea id="post-content" rows="4" placeholder="Ask a question or start a discussion..." required></textarea>
+                <button type="submit">Post</button>
+                <p id="post-message" class="form-message"></p>
+            </form>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="post-header">
+                        <strong>John Doe</strong> <span class="post-date">2 hours ago</span>
+                    </div>
+                    <div class="post-body">
+                        <p>How can I improve my resume to stand out in the tech industry?</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="like-button">Like</button>
+                        <button class="comment-button">Comment</button>
+                        <div class="comments">
+                            <form class="comment-form">
+                                <input type="text" class="comment-input" placeholder="Add a comment...">
+                                <button type="submit" class="comment-submit">Submit</button>
+                            </form>
+                            <div class="comment-list">
+                                <div class="comment">
+                                    <strong>Jane Smith:</strong> Great question! Focus on highlighting your key projects and skills.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CVSyncer - Made in India</p>
+        <p>Team Members: Chirag Jain, Divyansh Kathuria, Gaurav Kapoor, Ayush Ranjan Sinha, Mansimar Singh, Medhavini</p>
+    </footer>
+
+    <script src="communityScript.js"></script>
+</body>
+</html>

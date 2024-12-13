@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Enhancer</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+    </style>
+</head>
+
+<body class="bg-[#f3f6fe]">
+    <header class="sticky top-0 z-50">
+        <nav class="bg-[#3b82f6] flex justify-between items-center px-[20px] py-[10px]">
+            <div>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/">Home</a>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/#features">Features</a>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/analyze">Analyze Resume</a>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/community">Community</a>
+
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/contactUs">Contact Us</a>
+            </div>
+            <div>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/signUp">Sign Up</a>
+                <a class="text-white font-bold mx-[10px] my-[0px] " href="/signIn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="main bg-[#f3f6fe] flex flex-col gap-5 justify-center items-center mt-10">
+
+        <!-- <p class="font-bold text-center text-5xl text-blue-700 mb-10">Resume Enhancer</p> -->
+        <div class="container flex items-center justify-center flex-col gap-10 w-[100%] mb-5">
+            <div class="div-upload flex justify-center items-center gap-20">
+                <!-- aajao -->
+
+                <div class=" flex flex-col px-15  gap-7 justify-center items-center"> 
+                    <p class="text-4xl font-medium  text-blue-700 ">Upload Your Resume </p>
+                    <div class="uFileDiv bg-blue-900  h-[200px] w-[100%] text-center flex items-center justify-center hover:bg-blue-800 hover:cursor-pointer relative">
+                        <img src="assets\uploadImg.png" class="w-40 m-auto">
+                    </div>
+                    <p class="fileInputLabel text-lg font-medium  text-blue-700">No file Choosen</p>
+
+                     <input type="file" class="fileInput text-lg hidden" accept=".pdf" />
+
+                </div>
+                <p class="font-medium text-3xl text-blue-500">OR </p>
+                <textarea
+                    class="parsedTextbox border-2 w-[700px] h-[400px] text-lg p-4 placeholder:text-3xl placeholder:text-center "
+                    placeholder="Enter your Resume Text here"></textarea>
+
+            </div>
+            <button class="analyze-btn  rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Analyze</button>
+            <div class="flex gap-10 w-full">
+                
+                <button class="ats-btn w-[50%] rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Enhance Resume</button>
+                <button class="jobs-btn w-[50%] rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Get Job Recommendations</button>
+                <button class="courses-btn  w-[50%] rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Get Course Recommendations</button>
+
+            </div>
+
+        </div>
+        <p class="logError text-center text-lg"></p>
+
+        <!-- <p class="cur-label hidden w-[40%] bg-blue-900 h-[70px] flex justify-center items-center text-4xl font-medium rounded-lg shadow-xl text-white"></p> -->
+        <p class="cur-label hidden w-[100%] bg-blue-900 h-[70px] flex justify-center items-center text-4xl font-medium  shadow-xl text-white"></p>
+
+        <div class="atsDiv  hidden w-[80%] px-10 bg-[#f3f6fe] flex flex-col gap-5 "> </div>
+
+
+        <div class="jobsDiv hidden w-[80%] px-10 bg-[#f3f6fe] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> </div>
+        <div class="coursesDiv hidden w-[80%] px-10 bg-[#f3f6fe] flex flex-col gap-10 "></div>
+
+
+
+    </div>
+
+    <footer>
+        <p>© 2024 CVSyncer - Made in India</p>
+        <p>Team Members: Chirag Jain, Divyansh Kathuria, Gaurav Kapoor, Ayush Ranjan Sinha, Mansimar Singh, Medhavini</p>
+    </footer>
+    <script src="scriptAnalyze.js"></script>
+</body>
+
+</html>

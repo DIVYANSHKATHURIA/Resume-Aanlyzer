@@ -1,0 +1,32 @@
+# Node.js dependencies
+/node_modules/
+
+# Environment variables
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories (for Yarn or other package managers)
+.pnp/
+.pnp.js
+
+# Build and distribution directories
+/dist
+/build
+
+# Operating system files
+.DS_Store         # macOS specific
+Thumbs.db         # Windows specific
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Optional: Ignore compiled JavaScript files if using TypeScript
+*.tsbuildinfo
+
+# Ignore the package-lock.json if using Yarn (optional)
+# package-lock.json

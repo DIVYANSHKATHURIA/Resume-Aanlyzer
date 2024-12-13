@@ -1,0 +1,236 @@
+/* General Reset */
+body, h1, h2, p, a, textarea, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+} 
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b82f6;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.nav-auth a {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav a:hover {
+    color: #f9fafb; /* Light color on hover */
+    background-color: #2563eb; /* Slightly darker background on hover */
+    transform: scale(1.1); /* Slight zoom-in on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+.nav-auth a:hover {
+    background-color: #1e3a8a;
+}
+
+/* Community Section */
+.community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #e5e7eb;
+}
+
+.community-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.community-container h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.community-container form {
+    margin-bottom: 30px;
+}
+
+.community-container textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.community-container button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    width: 100%;
+}
+
+.community-container button:hover {
+    background-color: #153e75;
+}
+
+/* Posts Section */
+.posts {
+    margin-top: 30px;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-header strong {
+    font-size: 1.1em;
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.post-body {
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-button, .comment-button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.like-button:hover, .comment-button:hover {
+    background-color: #153e75;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.comment-form {
+    display: flex;
+    align-items: center;
+}
+
+.comment-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.comment-submit {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-submit:hover {
+    background-color: #153e75;
+}
+
+.comment-list {
+    margin-top: 10px;
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-image {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
