@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b82f6;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+nav a:hover {
+    color: #f9fafb; /* Light color on hover */
+    background-color: #2563eb; /* Slightly darker background on hover */
+    transform: scale(1.1); /* Slight zoom-in on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+.nav-auth a:hover {
+    background-color: #1e3a8a;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #e5e7eb;
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: #153e75;
+}
+
+.form-message {
+    color: red;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-image {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
