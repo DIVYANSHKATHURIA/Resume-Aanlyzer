@@ -6,7 +6,7 @@ const router = express.Router()
 
 async function gptFetch(prompt){
     try{
-      const groq = new Groq({ apiKey: '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' });
+      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
       
       async function getGroqChatCompletion() {
         return groq.chat.completions.create({
